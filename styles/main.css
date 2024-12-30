@@ -1,0 +1,11 @@
+nav header {
+  display: flex;
+}
+
+/* Mobile and Tablet screens */
+@media screen and (max-width: 768px) {
+}
+
+/* Desktop screens */
+@media screen and (min-width: 769px) {
+}
