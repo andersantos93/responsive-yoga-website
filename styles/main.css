@@ -2,6 +2,22 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Lora", serif;
+}
+
+:root {
+  --first-color-light: #e5d9fd;
+  --first-color-dark: #1e0849;
+  --title-color: #220953;
+  --text-color: #4b3e65;
+  --text-color-light: #a197b4;
+  --white-color: #ffffff;
+  --body-color: #f5f0ff;
+  --container-color: #ffffff;
+  --dark-title-color: #d1c0f1;
+  --dark-text-color: #a094b8;
+  --dark-body-color: #14092a;
+  --dark-container-color: #372a51;
 }
 
 nav header {
