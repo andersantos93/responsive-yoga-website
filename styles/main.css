@@ -20,16 +20,57 @@
   --dark-container-color: #372a51;
 }
 
-nav header {
+body {
+  background-color: #f5f0ff;
+}
+
+nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 20px;
 }
 
 /* Mobile and Tablet screens */
 @media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav .right-menu {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .desktop-menu {
+    display: none;
+  }
 }
 
 /* Desktop screens */
 @media screen and (min-width: 769px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  nav .desktop-menu {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+  }
+
+  nav .desktop-menu ul li {
+    display: inline;
+    padding: 15px;
+  }
+
+  nav .desktop-menu ul li a {
+    color: #220953;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  nav .right-menu .mobile-menu {
+    display: none;
+  }
 }
