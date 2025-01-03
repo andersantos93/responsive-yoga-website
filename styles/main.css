@@ -18,6 +18,7 @@
   --dark-text-color: #a094b8;
   --dark-body-color: #14092a;
   --dark-container-color: #372a51;
+  --gradient-color: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
 }
 
 body {
@@ -27,6 +28,70 @@ body {
 nav {
   display: flex;
   padding: 20px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.next img {
+  position: absolute;
+}
+
+.next .list-ellipse:last-child {
+  transform: rotate(18deg);
+}
+
+.next span {
+  width: 60px;
+  margin: 45px;
+  background: var(--gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.right-arrow {
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+.bring-happiness h1 {
+  grid-area: header;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.bring-happiness p {
+  grid-area: paragraph;
+  color: var(--text-color);
+}
+
+.bring-happiness a {
+  grid-area: anchor;
+  width: 158px;
+  height: 56px;
+  border-radius: 64px;
+  background: var(--gradient-color);
+  justify-self: center;
+  padding: 17px 24px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+}
+
+.bring-happiness .right-white-arrow {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.health-fitness {
+  grid-area: health-fitness;
 }
 
 /* Mobile and Tablet screens */
@@ -43,6 +108,35 @@ nav {
 
   nav .desktop-menu {
     display: none;
+  }
+
+  .bring-happiness {
+    display: grid;
+    margin: 20px;
+    grid-template-areas:
+      "header header header"
+      "paragraph paragraph paragraph"
+      "anchor anchor anchor"
+      "health-fitness health-fitness health-fitness";
+  }
+
+  .bring-happiness h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .bring-happiness p {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .bring-happiness a {
+    margin-top: 30px;
+  }
+
+  .health-fitness {
+    margin-top: 40px;
+    justify-self: center;
   }
 }
 
@@ -72,5 +166,26 @@ nav {
 
   nav .right-menu .mobile-menu {
     display: none;
+  }
+
+  .bring-happiness {
+    display: grid;
+    margin: 20px;
+    grid-template-areas:
+      "health-fitness header header"
+      "health-fitness paragraph paragraph"
+      "health-fitness anchor anchor"
+      "health-fitness . .";
+  }
+
+  .bring-happiness h1 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 100px;
+  }
+
+  .bring-happiness p {
+    text-align: justify;
+    margin: 30px;
   }
 }
