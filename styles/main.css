@@ -156,6 +156,15 @@ nav {
   bottom: 25px;
 }
 
+.introduction-section {
+  display: flex;
+  margin-top: 50px;
+}
+
+img {
+  object-fit: contain;
+}
+
 /* Mobile and Tablet screens */
 @media screen and (max-width: 768px) {
   nav {
@@ -214,6 +223,110 @@ nav {
 
   .health-fitness-image {
     content: url("../assets/health-fitness-mobile-tablet.png");
+  }
+
+  .introduction-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  #home-yoga {
+    min-width: 320px;
+    /* margin: 8%; */
+  }
+
+  #intro-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline h1 {
+    max-width: 320px;
+    font-size: 44px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--title-color);
+  }
+
+  .headline #yoga-text-icon {
+    width: 123px;
+    transform: rotate(10deg);
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  .headline #star-icon1 {
+    position: absolute;
+    /* left: 13%; */
+    right: 90px;
+    width: 52px;
+  }
+
+  .intro-description {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  #home-circle1 {
+    display: none;
+  }
+
+  #home-circle2 {
+    width: 16px;
+    align-self: flex-end;
+  }
+
+  #home-button {
+    width: 214px;
+    height: 56px;
+    margin: 40px auto 0 auto;
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, #ff52af, #9f53ff);
+    border: none;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #about-class {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 30px auto;
+    width: 200px;
+  }
+
+  #about-class h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: lighter;
+    color: var(--title-color);
+  }
+
+  #about-class p {
+    font-size: 13px;
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .br-mb {
+    display: flex;
+    justify-content: center;
+  }
+
+  .br-pc {
+    position: relative;
   }
 }
 
@@ -284,5 +397,108 @@ nav {
 
   .health-fitness-image {
     content: url("../assets/health-fitness-desktop.png");
+  }
+
+  .introduction-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #home-yoga {
+    width: 42%;
+    margin-right: 60px;
+  }
+
+  .headline {
+    margin-left: 20%;
+  }
+
+  #intro-text {
+    width: 50%;
+  }
+
+  .headline h1 {
+    max-width: 600px;
+    font-size: 96px;
+    /* font-size: 10vw; */
+    font-weight: 300;
+    color: var(--title-color);
+  }
+
+  .headline #yoga-text-icon {
+    width: 238px;
+    transform: rotate(10deg);
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  .headline #star-icon1 {
+    width: 95px;
+  }
+
+  .br-mb {
+    display: flex;
+    height: 150px;
+  }
+
+  .br-pc {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #home-circle1 {
+    margin-left: 15%;
+  }
+
+  #home-circle2 {
+    display: none;
+  }
+
+  .intro-description {
+    margin-left: 20%;
+    width: 417px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+  }
+
+  #home-button {
+    width: 214px;
+    height: 56px;
+    margin-top: 40px;
+    margin-left: 20%;
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, #ff52af, #9f53ff);
+    border: none;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #about-class {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 20%;
+    width: 280px;
+  }
+
+  #about-class h3 {
+    font-size: 56px;
+    font-weight: lighter;
+    color: var(--title-color);
+  }
+
+  #about-class p {
+    font-size: 14px;
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
   }
 }
