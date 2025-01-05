@@ -30,7 +30,63 @@ nav {
   padding: 20px;
 }
 
+.list-yoga {
+  display: grid;
+  grid-template-columns: [start] 80px [midle] auto;
+  grid-template-areas:
+    "header image"
+    "paragraph paragraph"
+    "next next";
+  padding: 30px;
+}
+
+.list-yoga h1 {
+  grid-area: header;
+  align-self: center;
+  color: var(--title-color);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.list-yoga-image {
+  grid-area: image;
+  background-color: #e5d9fd;
+  height: 140px;
+  margin: 60px 0;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  position: relative;
+}
+
+.list-yoga-image img {
+  width: 80%;
+  position: absolute;
+  left: 35px;
+  bottom: 20px;
+}
+
+.list-yoga-paragraph {
+  grid-area: paragraph;
+  position: relative;
+}
+
+.list-yoga-paragraph img {
+  position: absolute;
+  top: -30px;
+}
+
+.list-yoga-paragraph p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-indent: 20px;
+}
+
 .next {
+  grid-area: next;
   display: flex;
   justify-content: center;
   position: relative;
@@ -360,7 +416,7 @@ img {
 
   .bring-happiness {
     display: grid;
-    margin: 30px 100px;
+    margin: 30px;
     grid-template-areas:
       "health-fitness header header"
       "health-fitness paragraph paragraph"
