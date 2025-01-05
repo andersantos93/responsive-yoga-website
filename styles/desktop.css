@@ -217,4 +217,57 @@
     text-align: center;
     font-family: "Poppins", sans-serif;
   }
+
+  footer {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: [start] 30% [middle] auto [end];
+    justify-content: space-evenly;
+    background-color: var(--first-color-dark);
+    padding: 50px 20px 30px 20px;
+    grid-template-areas:
+      "intro address contact office"
+      "intro address contact office"
+      "divider divider divider divider"
+      "social-medias social-medias copyright copyright";
+  }
+
+  footer .logo {
+    grid-area: intro;
+  }
+
+  footer .logo .description {
+    margin-top: 20px;
+  }
+
+  footer .address {
+    grid-area: address;
+  }
+
+  footer .contact {
+    grid-area: contact;
+  }
+
+  footer .office {
+    grid-area: office;
+  }
+
+  footer hr {
+    grid-area: divider;
+    border: none;
+    height: 1px;
+    background-color: var(--text-color-light);
+  }
+
+  footer .social-medias {
+    display: flex;
+    gap: 25px;
+    justify-content: start;
+  }
+
+  footer .copyright {
+    grid-area: copyright;
+    display: flex;
+    justify-content: end;
+  }
 }

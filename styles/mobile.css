@@ -15,7 +15,7 @@
 
   .list-yoga {
     display: grid;
-    grid-template-columns: [start] 20% [midle] auto;
+    grid-template-columns: [start] 20% [middle] auto;
     grid-template-areas:
       "header image"
       "paragraph paragraph"
@@ -213,6 +213,7 @@
 
   footer .description {
     width: 217px;
+    margin-top: 15px;
   }
 
   footer h3 {
