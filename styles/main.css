@@ -18,6 +18,7 @@
   --dark-text-color: #a094b8;
   --dark-body-color: #14092a;
   --dark-container-color: #372a51;
+  --gradient-color: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
 }
 
 body {
@@ -27,6 +28,132 @@ body {
 nav {
   display: flex;
   padding: 20px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.next img {
+  position: absolute;
+}
+
+.next .list-ellipse:last-child {
+  transform: rotate(18deg);
+}
+
+.next span {
+  width: 60px;
+  margin: 45px;
+  background: var(--gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.right-arrow {
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+.bring-happiness h1 {
+  grid-area: header;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.bring-happiness p {
+  grid-area: paragraph;
+  color: var(--text-color);
+}
+
+.bring-happiness a {
+  grid-area: anchor;
+  width: 158px;
+  height: 56px;
+  border-radius: 64px;
+  background: var(--gradient-color);
+  padding: 17px 24px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+}
+
+.bring-happiness .right-white-arrow {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.health-fitness {
+  grid-area: health-fitness;
+  position: relative;
+}
+
+.health-fitness .heart-rate,
+.health-fitness .free-courses {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.health-fitness .heart-rate {
+  grid-auto-flow: column;
+  top: 70px;
+  left: -10px;
+  width: 155px;
+  height: 60px;
+  grid-template-areas:
+    "heart header header"
+    "heart bpm bpm";
+}
+
+.health-fitness .heart-rate .heart-icon {
+  grid-area: heart;
+  align-self: center;
+  background-color: #ffe6e5;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.health-fitness .heart-rate h3 {
+  grid-area: header;
+}
+
+.health-fitness .heart-rate span {
+  grid-area: bpm;
+}
+
+.health-fitness .heart-rate h3,
+.health-fitness .free-courses h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.health-fitness .heart-rate span,
+.health-fitness .free-courses span {
+  background: var(--gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.health-fitness .free-courses {
+  width: 120px;
+  height: 60px;
+  left: 210px;
+  bottom: 25px;
 }
 
 /* Mobile and Tablet screens */
@@ -43,6 +170,50 @@ nav {
 
   nav .desktop-menu {
     display: none;
+  }
+
+  .bring-happiness {
+    display: grid;
+    margin: 20px;
+    grid-template-areas:
+      "header header header"
+      "paragraph paragraph paragraph"
+      "anchor anchor anchor"
+      "health-fitness health-fitness health-fitness";
+  }
+
+  .bring-happiness h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .bring-happiness p {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .bring-happiness a {
+    margin-top: 30px;
+    justify-self: center;
+  }
+
+  .health-fitness {
+    margin-top: 40px;
+    justify-self: center;
+  }
+
+  .health-fitness .heart-rate {
+    top: 70px;
+    left: -10px;
+  }
+
+  .health-fitness .free-courses {
+    left: 210px;
+    bottom: 25px;
+  }
+
+  .health-fitness-image {
+    content: url("../assets/health-fitness-mobile-tablet.png");
   }
 }
 
@@ -64,7 +235,7 @@ nav {
   }
 
   nav .desktop-menu ul li a {
-    color: #220953;
+    color: var(--title-color);
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
@@ -72,5 +243,46 @@ nav {
 
   nav .right-menu .mobile-menu {
     display: none;
+  }
+
+  .bring-happiness {
+    display: grid;
+    margin: 30px 100px;
+    grid-template-areas:
+      "health-fitness header header"
+      "health-fitness paragraph paragraph"
+      "health-fitness anchor anchor"
+      "health-fitness . .";
+  }
+
+  .bring-happiness h1 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-left: 30px;
+    text-align: start;
+  }
+
+  .bring-happiness p {
+    margin: 30px;
+  }
+
+  .bring-happiness a {
+    justify-self: start;
+    margin-left: 25px;
+  }
+
+  .health-fitness .heart-rate {
+    top: 78px;
+    left: 25px;
+  }
+
+  .health-fitness .free-courses {
+    left: 331px;
+    bottom: 40px;
+  }
+
+  .health-fitness-image {
+    content: url("../assets/health-fitness-desktop.png");
   }
 }
