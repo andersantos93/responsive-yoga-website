@@ -1,0 +1,207 @@
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav .right-menu {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav .desktop-menu {
+    display: none;
+  }
+
+  .list-yoga {
+    display: grid;
+    grid-template-columns: [start] 20% [midle] auto;
+    grid-template-areas:
+      "header image"
+      "paragraph paragraph"
+      "next next";
+    padding: 30px;
+  }
+
+  .list-yoga h1 {
+    grid-area: header;
+    align-self: center;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .list-yoga-image {
+    grid-area: image;
+  }
+
+  .list-yoga-paragraph {
+    grid-area: paragraph;
+    position: relative;
+  }
+
+  .list-yoga-paragraph img {
+    position: absolute;
+    top: -30px;
+  }
+
+  .list-yoga-paragraph p {
+    font-size: 20px;
+    font-weight: 500;
+    text-indent: 20px;
+  }
+
+  .list-yoga-image img {
+    width: min(300px, 85%);
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
+  }
+
+  .bring-happiness {
+    display: grid;
+    margin: 20px;
+    grid-template-areas:
+      "header header header"
+      "paragraph paragraph paragraph"
+      "anchor anchor anchor"
+      "health-fitness health-fitness health-fitness";
+  }
+
+  .bring-happiness h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .bring-happiness p {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .bring-happiness a {
+    margin-top: 30px;
+    justify-self: center;
+  }
+
+  .health-fitness {
+    margin-top: 40px;
+    justify-self: center;
+  }
+
+  .health-fitness .heart-rate {
+    top: 70px;
+    left: -10px;
+  }
+
+  .health-fitness .free-courses {
+    left: 210px;
+    bottom: 25px;
+  }
+
+  .health-fitness-image {
+    content: url("../assets/health-fitness-mobile-tablet.png");
+  }
+
+  .introduction-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  #home-yoga {
+    min-width: 320px;
+    /* margin: 8%; */
+  }
+
+  #intro-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline h1 {
+    max-width: 320px;
+    font-size: 44px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--title-color);
+  }
+
+  .headline #yoga-text-icon {
+    width: 123px;
+    transform: rotate(10deg);
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  .headline #star-icon1 {
+    position: absolute;
+    /* left: 13%; */
+    right: 90px;
+    width: 52px;
+  }
+
+  .intro-description {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  #home-circle1 {
+    display: none;
+  }
+
+  #home-circle2 {
+    width: 16px;
+    align-self: flex-end;
+  }
+
+  #home-button {
+    width: 214px;
+    height: 56px;
+    margin: 40px auto 0 auto;
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, #ff52af, #9f53ff);
+    border: none;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #about-class {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 30px auto;
+    width: 200px;
+  }
+
+  #about-class h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: lighter;
+    color: var(--title-color);
+  }
+
+  #about-class p {
+    font-size: 13px;
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .br-mb {
+    display: flex;
+    justify-content: center;
+  }
+
+  .br-pc {
+    position: relative;
+  }
+}

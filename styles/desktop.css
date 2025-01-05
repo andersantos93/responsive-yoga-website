@@ -1,0 +1,222 @@
+@media screen and (min-width: 769px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  nav .desktop-menu {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+  }
+
+  nav .desktop-menu ul li {
+    display: inline;
+    padding: 15px;
+  }
+
+  nav .desktop-menu ul li a {
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  nav .right-menu .mobile-menu {
+    display: none;
+  }
+
+  .list-yoga {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-areas: "header image paragraph next";
+    padding: 30px;
+  }
+
+  .list-yoga h1 {
+    grid-area: header;
+    align-self: center;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .list-yoga-paragraph {
+    grid-area: paragraph;
+    align-self: center;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .list-yoga-paragraph img {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+  }
+
+  .list-yoga-paragraph p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 50px;
+  }
+
+  .list-yoga-image {
+    grid-area: image;
+    width: 325px;
+  }
+
+  .list-yoga-image img {
+    width: 290px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+  }
+
+  .next {
+    grid-area: next;
+    align-self: center;
+  }
+
+  .bring-happiness {
+    display: grid;
+    margin: 30px;
+    grid-template-areas:
+      "health-fitness header header"
+      "health-fitness paragraph paragraph"
+      "health-fitness anchor anchor"
+      "health-fitness . .";
+  }
+
+  .bring-happiness h1 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-left: 30px;
+    text-align: start;
+  }
+
+  .bring-happiness p {
+    margin: 30px;
+  }
+
+  .bring-happiness a {
+    justify-self: start;
+    margin-left: 25px;
+  }
+
+  .health-fitness .heart-rate {
+    top: 78px;
+    left: 25px;
+  }
+
+  .health-fitness .free-courses {
+    left: 331px;
+    bottom: 40px;
+  }
+
+  .health-fitness-image {
+    content: url("../assets/health-fitness-desktop.png");
+  }
+
+  .introduction-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #home-yoga {
+    width: 42%;
+    margin-right: 60px;
+  }
+
+  .headline {
+    margin-left: 20%;
+  }
+
+  #intro-text {
+    width: 50%;
+  }
+
+  .headline h1 {
+    max-width: 600px;
+    font-size: 96px;
+    /* font-size: 10vw; */
+    font-weight: 300;
+    color: var(--title-color);
+  }
+
+  .headline #yoga-text-icon {
+    width: 238px;
+    transform: rotate(10deg);
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  .headline #star-icon1 {
+    width: 95px;
+  }
+
+  .br-mb {
+    display: flex;
+    height: 150px;
+  }
+
+  .br-pc {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #home-circle1 {
+    margin-left: 15%;
+  }
+
+  #home-circle2 {
+    display: none;
+  }
+
+  .intro-description {
+    margin-left: 20%;
+    width: 417px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+  }
+
+  #home-button {
+    width: 214px;
+    height: 56px;
+    margin-top: 40px;
+    margin-left: 20%;
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, #ff52af, #9f53ff);
+    border: none;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #about-class {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 20%;
+    width: 280px;
+  }
+
+  #about-class h3 {
+    font-size: 56px;
+    font-weight: lighter;
+    color: var(--title-color);
+  }
+
+  #about-class p {
+    font-size: 14px;
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+}
