@@ -14,12 +14,15 @@
     justify-content: space-evenly;
   }
 
-  nav .desktop-menu ul li {
+  nav .desktop-menu ul li,
+  nav .desktop-menu ul li .accordion-item {
+    position: relative;
     display: inline;
     padding: 15px;
   }
 
-  nav .desktop-menu ul li a {
+  nav .desktop-menu ul li a,
+  nav .desktop-menu ul li .accordion-item a {
     color: var(--title-color);
     font-size: 16px;
     font-weight: 500;
@@ -28,6 +31,35 @@
 
   nav .right-menu .mobile-menu {
     display: none;
+  }
+
+  .accordion-item {
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .accordion-header {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    position: absolute;
+    top: 90%;
+    left: 5px;
+    overflow: hidden;
+    background-color: var(--body-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .accordion-item:hover .accordion-content {
+    max-height: 200px;
+    padding: 10px 15px;
   }
 
   .list-yoga {
@@ -141,7 +173,6 @@
   .headline h1 {
     max-width: 600px;
     font-size: 96px;
-    /* font-size: 10vw; */
     font-weight: 300;
     color: var(--title-color);
   }
