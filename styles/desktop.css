@@ -153,59 +153,122 @@
   }
 
   .introduction-section {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+      "header1 home-yoga"
+      "header2 home-yoga"
+      "header3 home-yoga"
+      "circle home-yoga"
+      "paragraph home-yoga"
+      "button home-yoga"
+      "about-class home-yoga";
+
+    grid-template-columns: minmax(300px auto) minmax(400px, 600px);
+    padding: 0 30px 0 7%;
+    margin-bottom: 100px;
   }
 
-  #home-yoga {
-    width: 42%;
-    margin-right: 60px;
-  }
-
-  .headline {
-    margin-left: 20%;
-  }
-
-  #intro-text {
-    width: 50%;
-  }
-
-  .headline h1 {
+  .home-yoga-field {
+    grid-area: home-yoga;
+    width: 100%;
+    height: auto;
     max-width: 600px;
+    min-width: 350px;
+    object-fit: contain;
+  }
+
+  .header1-field {
+    grid-area: header1;
+  }
+
+  .header1-field h1,
+  .header2-field h1,
+  .header3-field h1 {
+    display: inline;
     font-size: 96px;
-    font-weight: 300;
+    font-weight: lighter;
     color: var(--title-color);
   }
 
-  .headline #yoga-text-icon {
-    width: 238px;
-    transform: rotate(10deg);
-    margin-left: 20px;
+  .header2-field {
+    grid-area: header2;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #rotated {
     align-self: center;
-  }
-
-  .headline #star-icon1 {
-    width: 95px;
-  }
-
-  .br-mb {
-    display: flex;
-    height: 150px;
-  }
-
-  .br-pc {
-    display: block;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: center;
+    padding-bottom: 10px;
     align-items: center;
+    width: 240px;
+    height: 131px;
+    text-align: center;
+    border-radius: 16px;
+    transform: rotate(10deg);
+    background: var(--gradient-color);
+    color: var(--white-color);
   }
 
-  #home-circle1 {
-    margin-left: 15%;
+  #star-icon1 {
+    width: 95px;
+    margin-left: 15px;
   }
 
-  #home-circle2 {
+  #star-icon2 {
     display: none;
+  }
+
+  .header3-field {
+    grid-area: header3;
+  }
+
+  .circle-field {
+    grid-area: circle;
+    margin-left: -30px;
+  }
+
+  .paragraph-field {
+    grid-area: paragraph;
+    width: 60%;
+    min-width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+
+  .button-field {
+    grid-area: button;
+  }
+
+  .button-field .home-button {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .about-class-field {
+    margin-top: 30px;
+    grid-area: about-class;
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+
+  .about-class-field h2 {
+    font-size: 56px;
+    font-weight: lighter;
+    color: var(--title-color);
+  }
+
+  .about-class-field h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
   }
 
   .anything-section {
