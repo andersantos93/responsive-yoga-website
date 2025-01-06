@@ -172,6 +172,55 @@
     display: none;
   }
 
+  .anything-section {
+    display: grid;
+    margin: 30px 100px;
+    grid-template-areas:
+      "header header trainer-img "
+      "paragraph paragraph trainer-img"
+      "anchor anchor trainer-img "
+      " . . trainer-img";
+  }
+
+  .trainer-img {
+    content: url("../assets/exercise-group-desktop.png");
+  }
+
+  .anything-section h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-left: 30px;
+    text-align: start;
+  }
+
+  .anything-section p {
+    margin: 30px;
+  }
+
+  .anything-section .home-button {
+    margin-left: 30px;
+  }
+
+  .trainer-img-wrapper {
+    max-height: 576px;
+  }
+
+  .trainer-img-wrapper .high-quality-video span,
+  .trainer-img-wrapper .professional-trainer span {
+    font-size: 16px;
+  }
+
+  .trainer-img-wrapper .high-quality-video {
+    top: 80px;
+    right: 30px;
+  }
+
+  .trainer-img-wrapper .professional-trainer {
+    bottom: 60px;
+    left: 35px;
+  }
+
   .intro-description {
     margin-left: 20%;
     width: 417px;
@@ -180,7 +229,7 @@
     color: var(--text-color);
   }
 
-  #home-button {
+  .home-button {
     width: 214px;
     height: 56px;
     margin-top: 40px;
