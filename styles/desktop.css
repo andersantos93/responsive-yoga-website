@@ -174,12 +174,12 @@
 
   .anything-section {
     display: grid;
-    margin: 30px 100px;
+    margin: 30px;
     grid-template-areas:
-      "header header trainer-img "
-      "paragraph paragraph trainer-img"
-      "anchor anchor trainer-img "
-      " . . trainer-img";
+      "header header . trainer-img "
+      "paragraph paragraph . trainer-img"
+      "anchor anchor anchor trainer-img "
+      ". . . trainer-img";
   }
 
   .trainer-img {
@@ -187,23 +187,22 @@
   }
 
   .anything-section h1 {
-    font-size: 64px;
+    font-size: 35px;
     font-weight: 400;
     margin-top: 80px;
-    margin-left: 30px;
     text-align: start;
   }
 
   .anything-section p {
-    margin: 30px;
+    margin-top: 30px;
   }
 
   .anything-section .home-button {
-    margin-left: 30px;
+    margin-left: 0px;
   }
 
-  .trainer-img-wrapper {
-    max-height: 576px;
+  .trainer-img {
+    max-width: 520px;
   }
 
   .trainer-img-wrapper .high-quality-video span,
@@ -230,6 +229,7 @@
   }
 
   .home-button {
+    grid-area: anchor;
     width: 214px;
     height: 56px;
     margin-top: 40px;
