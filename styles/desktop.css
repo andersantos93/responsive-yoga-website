@@ -65,7 +65,7 @@
   .list-yoga {
     display: grid;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     grid-template-areas: "header image paragraph next";
     padding: 30px;
   }
@@ -87,11 +87,11 @@
   .list-yoga-paragraph img {
     position: absolute;
     top: 20px;
-    left: -20px;
   }
 
   .list-yoga-paragraph p {
-    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
   }
 
   .list-yoga-image {
@@ -364,10 +364,17 @@
     gap: 10px;
   }
 
-  /* .follow-us {
+  .follow-us {
     position: relative;
+    margin-top: 50px;
   }
-   */
+
+  .follow-us-header {
+    position: absolute;
+    width: 25%;
+    top: 15%;
+    left: 37.5%;
+  }
 
   .follow-us-pictures {
     display: grid;
@@ -375,30 +382,39 @@
     grid-template-areas:
       "picture-1 picture-2"
       "picture-3 picture-4";
+    position: relative;
   }
 
   .follow-us-picture-1 {
     grid-area: picture-1;
+    position: absolute;
+    right: 120px;
     content: url("../assets/follow-yoga-desktop-1.png");
   }
 
   .follow-us-picture-2 {
     grid-area: picture-2;
+    position: absolute;
+    left: 120px;
     content: url("../assets/follow-yoga-desktop-2.png");
   }
 
   .follow-us-picture-3 {
     grid-area: picture-3;
+    margin-top: 390px;
+    margin-right: 10px;
     content: url("../assets/follow-yoga-desktop-3.png");
   }
 
   .follow-us-picture-4 {
     grid-area: picture-4;
+    margin-top: 390px;
+    margin-left: 10px;
     content: url("../assets/follow-yoga-desktop-4.png");
   }
 
   .follow-us-pictures img {
-    width: 150px;
+    width: 250px;
   }
 
   footer {
