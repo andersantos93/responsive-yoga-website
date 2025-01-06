@@ -374,6 +374,47 @@
     gap: 10px;
   }
 
+  .follow-us {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .follow-us-pictures {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "picture-1 picture-2"
+      "picture-3 picture-3"
+      "picture-4 picture-4";
+  }
+
+  .follow-us-picture-1 {
+    grid-area: picture-1;
+    justify-self: start;
+    margin-right: 15px;
+    content: url("../assets/follow-yoga-mobile-1.png");
+  }
+
+  .follow-us-picture-2 {
+    grid-area: picture-2;
+    justify-self: end;
+    margin-top: 40px;
+    content: url("../assets/follow-yoga-mobile-2.png");
+  }
+
+  .follow-us-picture-3 {
+    grid-area: picture-3;
+    justify-self: start;
+    content: url("../assets/follow-yoga-mobile-3.png");
+  }
+
+  .follow-us-picture-4 {
+    grid-area: picture-4;
+    justify-self: end;
+    content: url("../assets/follow-yoga-mobile-4.png");
+  }
+
   footer {
     display: flex;
     flex-direction: column;

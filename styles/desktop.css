@@ -364,6 +364,43 @@
     gap: 10px;
   }
 
+  /* .follow-us {
+    position: relative;
+  }
+   */
+
+  .follow-us-pictures {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "picture-1 picture-2"
+      "picture-3 picture-4";
+  }
+
+  .follow-us-picture-1 {
+    grid-area: picture-1;
+    content: url("../assets/follow-yoga-desktop-1.png");
+  }
+
+  .follow-us-picture-2 {
+    grid-area: picture-2;
+    content: url("../assets/follow-yoga-desktop-2.png");
+  }
+
+  .follow-us-picture-3 {
+    grid-area: picture-3;
+    content: url("../assets/follow-yoga-desktop-3.png");
+  }
+
+  .follow-us-picture-4 {
+    grid-area: picture-4;
+    content: url("../assets/follow-yoga-desktop-4.png");
+  }
+
+  .follow-us-pictures img {
+    width: 150px;
+  }
+
   footer {
     display: grid;
     gap: 60px;
