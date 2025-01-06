@@ -226,6 +226,25 @@ img {
   object-fit: contain;
 }
 
+.newsletter-section {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.newsletter-wrapper {
+  width: 100%;
+  background: var(--gradient-color);
+  border-radius: 32px;
+  color: #fff;
+}
+
+.newsletter-section p {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
 footer .description {
   width: 217px;
 }
