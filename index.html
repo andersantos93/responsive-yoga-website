@@ -15,6 +15,24 @@
     <link rel="stylesheet" href="./styles/desktop.css" />
   </head>
   <body>
+    <!-- The trigger of the menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+
+    <!-- menu -->
+    <div class="side-menu">
+      <a href="#" class="close-menu">
+        <label for="menu-toggle">
+          <img src="./assets/ri_close-fill.png" />
+        </label>
+      </a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">Place</a></li>
+        <li><a href="#">Follow</a></li>
+      </ul>
+    </div>
+
     <nav>
       <a href="#"><img src="./assets/logo.png" /></a>
       <div class="desktop-menu">
@@ -27,7 +45,11 @@
       </div>
       <div class="right-menu">
         <a href="#" class="change-theme" checked><img src="./assets/dark-theme.png" /></a>
-        <a href="#" class="mobile-menu"><img src="./assets/hamburger.png" /></a>
+        <a href="#" class="mobile-menu">
+          <label for="menu-toggle">
+            <img src="./assets/hamburger.png" />
+          </label>
+        </a>
       </div>
     </nav>
     <main>

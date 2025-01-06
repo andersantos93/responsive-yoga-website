@@ -1,4 +1,60 @@
 @media screen and (max-width: 768px) {
+  .menu-checkbox {
+    display: none;
+  }
+
+  .side-menu {
+    position: fixed;
+    right: -280px;
+    width: 280px;
+    height: 100%;
+    padding: 18px 33px 0 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--title-color);
+    transition: right 0.3s ease; /* how to slide */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+  }
+
+  /* The contents of menu */
+  .side-menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .side-menu ul li {
+    margin: 70px 0;
+  }
+
+  .side-menu ul li:first-child {
+    margin-top: 20px;
+  }
+
+  .side-menu ul li a {
+    color: var(--title-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  .side-menu ul li:first-child a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* When the menu is checked */
+  .menu-checkbox:checked ~ .side-menu {
+    right: 0; /* slide-in */
+  }
+
   nav {
     justify-content: space-between;
   }
@@ -7,6 +63,7 @@
     width: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 
   nav .desktop-menu {
