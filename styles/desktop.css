@@ -395,6 +395,7 @@
     grid-area: picture-1;
     position: absolute;
     right: 120px;
+    width: 250px;
     content: url("../assets/follow-yoga-desktop-1.png");
   }
 
@@ -402,25 +403,24 @@
     grid-area: picture-2;
     position: absolute;
     left: 120px;
+    width: 250px;
     content: url("../assets/follow-yoga-desktop-2.png");
   }
 
   .follow-us-picture-3 {
     grid-area: picture-3;
     margin-top: 390px;
-    margin-right: 10px;
+    margin-right: 15px;
+    width: 330px;
     content: url("../assets/follow-yoga-desktop-3.png");
   }
 
   .follow-us-picture-4 {
     grid-area: picture-4;
     margin-top: 390px;
-    margin-left: 10px;
+    margin-left: 15px;
+    width: 330px;
     content: url("../assets/follow-yoga-desktop-4.png");
-  }
-
-  .follow-us-pictures img {
-    width: 250px;
   }
 
   footer {
