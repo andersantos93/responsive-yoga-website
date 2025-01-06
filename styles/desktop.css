@@ -14,6 +14,12 @@
     justify-content: space-evenly;
   }
 
+  nav .desktop-menu ul li:first-child {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   nav .desktop-menu ul li,
   nav .desktop-menu ul li .accordion-item {
     position: relative;
@@ -452,5 +458,21 @@
     grid-area: copyright;
     display: flex;
     justify-content: end;
+  }
+
+  body:has(#mode-toggle:checked) nav .desktop-menu ul li a {
+    color: var(--dark-text-color);
+  }
+
+  body:has(#mode-toggle:checked) nav .desktop-menu ul li .accordion-item a {
+    color: var(--dark-text-color);
+  }
+
+  body:has(#mode-toggle:checked) .accordion-content {
+    background-color: var(--dark-title-color);
+  }
+
+  body:has(#mode-toggle:checked) .accordion-content p {
+    color: var(--title-color);
   }
 }

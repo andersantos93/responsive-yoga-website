@@ -30,6 +30,10 @@ nav {
   padding: 20px;
 }
 
+#mode-toggle {
+  display: none;
+}
+
 .list-yoga h1 {
   color: var(--title-color);
 }
@@ -308,4 +312,46 @@ footer .copyright span {
 footer p,
 footer span {
   color: var(--text-color-light);
+}
+
+body:has(#mode-toggle:checked) {
+  background-color: var(--dark-body-color);
+  color: var(--dark-text-color);
+}
+
+body:has(#mode-toggle:checked) .theme-image {
+  content: url("../assets/light-theme.png");
+}
+
+body:has(#mode-toggle:checked) .hamburger-menu {
+  content: url("../assets/hamburger-light-theme.png");
+}
+
+body:has(#mode-toggle:checked) h1,
+body:has(#mode-toggle:checked) #about-class h3,
+body:has(#mode-toggle:checked) #about-class p,
+body:has(#mode-toggle:checked) .heart-rate h3,
+body:has(#mode-toggle:checked) .free-courses h3 {
+  color: var(--dark-title-color);
+}
+
+body:has(#mode-toggle:checked) .newsletter-wrapper h1 {
+  color: #fff;
+}
+
+body:has(#mode-toggle:checked) .newsletter-wrapper h1,
+body:has(#mode-toggle:checked) .newsletter-wrapper p {
+  color: #fff;
+}
+
+body:has(#mode-toggle:checked) p {
+  color: var(--dark-text-color);
+}
+
+body:has(#mode-toggle:checked) .list-yoga-image,
+body:has(#mode-toggle:checked) .heart-rate,
+body:has(#mode-toggle:checked) .free-courses,
+body:has(#mode-toggle:checked) .high-quality-video,
+body:has(#mode-toggle:checked) .professional-trainer {
+  background-color: var(--dark-container-color);
 }
