@@ -364,6 +364,22 @@
     gap: 10px;
   }
 
+  .follow-us-picture-1 {
+    content: url("../assets/follow-yoga-desktop-1.png");
+  }
+
+  .follow-us-picture-2 {
+    content: url("../assets/follow-yoga-desktop-2.png");
+  }
+
+  .follow-us-picture-3 {
+    content: url("../assets/follow-yoga-desktop-3.png");
+  }
+
+  .follow-us-picture-4 {
+    content: url("../assets/follow-yoga-desktop-4.png");
+  }
+
   footer {
     display: grid;
     gap: 60px;

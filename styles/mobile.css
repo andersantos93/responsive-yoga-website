@@ -374,6 +374,82 @@
     gap: 10px;
   }
 
+  .follow-us {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .follow-us h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: lighter;
+    color: var(--title-color);
+  }
+
+  .follow-us .yoga-header {
+    background: var(--gradient-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .follow-us-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: var(--gradient-color);
+    margin: 25px;
+    padding: 25px;
+    border-radius: 64px;
+    width: 88px;
+    height: 88px;
+  }
+
+  .follow-us-button span {
+    color: #fff;
+  }
+
+  .follow-us-button img {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .follow-us-pictures {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "picture-1 picture-2"
+      "picture-3 picture-3"
+      "picture-4 picture-4";
+  }
+
+  .follow-us-picture-1 {
+    grid-area: picture-1;
+    justify-self: start;
+    margin-right: 15px;
+    content: url("../assets/follow-yoga-mobile-1.png");
+  }
+
+  .follow-us-picture-2 {
+    grid-area: picture-2;
+    justify-self: end;
+    margin-top: 40px;
+    content: url("../assets/follow-yoga-mobile-2.png");
+  }
+
+  .follow-us-picture-3 {
+    grid-area: picture-3;
+    justify-self: start;
+    content: url("../assets/follow-yoga-mobile-3.png");
+  }
+
+  .follow-us-picture-4 {
+    grid-area: picture-4;
+    justify-self: end;
+    content: url("../assets/follow-yoga-mobile-4.png");
+  }
+
   footer {
     display: flex;
     flex-direction: column;
