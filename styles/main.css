@@ -186,3 +186,28 @@ nav {
 img {
   object-fit: contain;
 }
+
+footer .description {
+  width: 217px;
+}
+
+footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+footer span {
+  display: block;
+  font-size: 15px;
+}
+
+footer .copyright span {
+  text-align: center;
+  font-size: 13px;
+}
+
+footer p,
+footer span {
+  color: var(--text-color-light);
+}
