@@ -1,4 +1,9 @@
 @media screen and (min-width: 769px) {
+  .menu-checkbox,
+  .side-menu {
+    display: none;
+  }
+
   nav {
     justify-content: space-around;
   }
