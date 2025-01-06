@@ -226,6 +226,46 @@ img {
   object-fit: contain;
 }
 
+.follow-us-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-us h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+  color: var(--title-color);
+}
+
+.follow-us .yoga-header {
+  background: var(--gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.follow-us-button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: var(--gradient-color);
+  margin: 25px;
+  padding: 25px;
+  border-radius: 64px;
+  width: 88px;
+  height: 88px;
+}
+
+.follow-us-button span {
+  color: #fff;
+}
+
+.follow-us-button img {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
 .newsletter-section {
   margin-top: 50px;
   margin-bottom: 70px;
