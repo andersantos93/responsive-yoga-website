@@ -178,6 +178,45 @@ nav {
   bottom: 25px;
 }
 
+.anything-section h1 {
+  grid-area: header;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.anything-section p {
+  grid-area: paragraph;
+  color: var(--text-color);
+}
+
+.trainer-img-wrapper {
+  grid-area: trainer-img;
+  position: relative;
+}
+
+.trainer-img-wrapper .high-quality-video,
+.trainer-img-wrapper .professional-trainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.trainer-img-wrapper .high-quality-video span,
+.trainer-img-wrapper .professional-trainer span {
+  background: var(--gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
 .introduction-section {
   display: flex;
   margin-top: 50px;
