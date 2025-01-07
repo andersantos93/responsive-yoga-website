@@ -157,70 +157,111 @@
   }
 
   .introduction-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
+    display: grid;
+    grid-template-areas:
+      "header1"
+      "header2"
+      "header3"
+      "paragraph"
+      "circle"
+      "button"
+      "about-class"
+      "home-yoga";
+
+    padding: 0 30px 0 7%;
+    gap: 10px;
+    margin-bottom: 100px;
   }
 
-  #home-yoga {
-    min-width: 320px;
-    /* margin: 8%; */
+  .home-yoga-field {
+    grid-area: home-yoga;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    min-width: 350px;
+    object-fit: contain;
   }
 
-  #intro-text {
-    display: flex;
-    flex-direction: column;
+  .header1-field {
+    grid-area: header1;
   }
 
-  .headline h1 {
-    max-width: 320px;
-    font-size: 44px;
-    font-weight: 300;
-    text-align: center;
+  .header1-field h1,
+  .header2-field h1,
+  .header3-field h1 {
     margin: 0 auto;
+    text-align: center;
+    font-size: 44px;
+    font-weight: lighter;
     color: var(--title-color);
   }
 
-  .headline #yoga-text-icon {
-    width: 123px;
-    transform: rotate(10deg);
-    margin-left: 20px;
+  .header2-field {
+    grid-area: header2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .header2-field h1 {
+    margin: 0;
+  }
+
+  #rotated {
     align-self: center;
-  }
-
-  .headline #star-icon1 {
-    position: absolute;
-    /* left: 13%; */
-    right: 90px;
-    width: 52px;
-  }
-
-  .intro-description {
-    margin-top: 20px;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    display: inline-flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    align-items: center;
+    width: 115px;
+    height: 68px;
     text-align: center;
-    color: var(--text-color);
+    border-radius: 8px;
+    transform: rotate(10deg);
+    background: var(--gradient-color);
+    color: var(--white-color);
   }
 
-  #home-circle1 {
+  #star-icon1 {
     display: none;
   }
 
-  #home-circle2 {
+  #star-icon2 {
+    width: 52px;
+    position: absolute;
+    left: calc(50% - 135px);
+  }
+
+  .header3-field {
+    grid-area: header3;
+  }
+
+  .circle-field {
+    grid-area: circle;
     width: 16px;
-    align-self: flex-end;
+    position: relative;
+    left: 70%;
+  }
+
+  .paragraph-field {
+    grid-area: paragraph;
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: var(--text-color);
+  }
+
+  .button-field {
+    grid-area: button;
   }
 
   .home-button {
-    grid-area: anchor;
-    width: 214px;
+    width: 206px;
     height: 56px;
-    margin: 40px auto 0 auto;
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     background: linear-gradient(45deg, #ff52af, #9f53ff);
     border: none;
@@ -231,34 +272,32 @@
     gap: 10px;
   }
 
-  #about-class {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px auto 30px auto;
-    width: 200px;
+  .button-field .home-button {
+    margin: 0 auto;
   }
 
-  #about-class h3 {
+  .about-class-field {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    grid-area: about-class;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .about-class-field h2 {
     text-align: center;
     font-size: 28px;
     font-weight: lighter;
     color: var(--title-color);
   }
 
-  #about-class p {
+  .about-class-field h3 {
     font-size: 13px;
+    font-weight: normal;
     color: var(--title-color);
-    text-align: center;
     font-family: "Poppins", sans-serif;
-  }
-
-  .br-mb {
-    display: flex;
-    justify-content: center;
-  }
-
-  .br-pc {
-    position: relative;
+    text-align: center;
   }
 
   .anything-section {
