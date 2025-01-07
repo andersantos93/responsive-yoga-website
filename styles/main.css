@@ -328,8 +328,8 @@ body:has(#mode-toggle:checked) .hamburger-menu {
 }
 
 body:has(#mode-toggle:checked) h1,
-body:has(#mode-toggle:checked) #about-class h3,
-body:has(#mode-toggle:checked) #about-class p,
+body:has(#mode-toggle:checked) .about-class-field h2,
+body:has(#mode-toggle:checked) .about-class-field h3,
 body:has(#mode-toggle:checked) .heart-rate h3,
 body:has(#mode-toggle:checked) .free-courses h3 {
   color: var(--dark-title-color);
